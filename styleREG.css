@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    overflow: hidden;
+}
+/*---------------register-section------------------*/
+
+.container {
+    position: relative;
+    background-image: url(img/register-img.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    padding: 48px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.logo_box {
+    width: 150px;
+    margin-bottom: 32px;
+}
+.introduction_cont h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.696);
+}
+.introduction_cont p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.logo_box img {
+    width: 100%;
+}
+.reg_input_cont {
+    padding-top: 16px;
+    display: block;
+    font-size: 16px;
+}
+.reg_input_cont input {
+    padding: 15px 30px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.344);
+    margin-bottom: 24px;
+    width: 100%;
+    font-size: 16px;
+}
+.reg_input_cont input::placeholder {
+    color: rgba(0, 0, 0, 0.399);
+    font-weight: 500;
+    font-size: 16px;
+}
+.reg_input_cont select {
+    padding: 7px 12px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.344);
+    margin-bottom: 24px;
+    width: 100%;
+}
+.Country {
+    color: rgba(0, 0, 0, 0.399);
+    font-weight: 500;
+    font-size: 16px;
+}
+.checkbox_box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.561);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    width: 100%;
+}
+.checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #4b49ac;
+}
+
+.submit_cont button {
+    font-size: 14px;
+    padding: 16px 48px;
+    background-color: #4b49ac;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.submit_cont button:hover {
+    background-color: #3d3c82;
+}
+.have_acc {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 24px;
+    color: #1f1f1f;
+}
+.have_acc a {
+    text-decoration: none;
+    color: #4b49ac;
+    padding-bottom: 1px;
+}
+.have_acc a:hover {
+    border-bottom: 1px solid #4b49ac;
+}
+.error_msg {
+    padding: 4px 12px;
+    background-color: rgb(236, 12, 5);
+    color: white;
+    margin: 8px 0;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+/*---------------login-section------------------*/
+.logincheckbox_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.561);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    width: 100%;
+}
+
+.submit_fcb {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.submit_fcb:hover {
+    background-color: #1f3d88;
+}
+.submit_fcb i {
+    font-size: 16px;
+}
+.logincheckbox_box div {
+    display: flex;
+    margin: 12px 0;
+    gap: 5px;
+}
+.logincheckbox_box div a {
+    text-decoration: none;
+    color: #4b49ac;
+}
+/*---------------mediaquery-section------------------*/
+
+@media (max-width: 810px) {
+    .content {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .introduction_cont p {
+        font-size: 14px;
+    }
+}
